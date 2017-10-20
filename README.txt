@@ -16,7 +16,7 @@ build:
 - The pasmo assembler (http://pasmo.speccy.org/)
 - The apack compressor. I use the version from http://www.smspower.org/maxim/uploads/SMSSoftware/aplib12.zip?sid=23bcb2a72f8a461be5cad0f46f7c3681,
   renamed to "apack" and run via Wine.
-- The fill16k utility, from the utils/ directory.
+- The fill16k utility, from the tools/ directory.
 - There are some files (with .plet1 extension) that have been created using
   pletter ("pletter 1 file").
 
