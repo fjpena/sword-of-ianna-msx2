@@ -1,0 +1,52 @@
+MSX version memory map
+---------------------------------
+
+Bank 0:	$4000 - $7FFF		<- Startup code, main code
+Bank 1: $8000 - $BFFF
+
+Bank 2:	$8000 - $BFFF		<- Barbarian common frames
+Bank 3:	$8000 - $BFFF		<- Barbarian specific frames 
+Bank 4: $8000 - $BFFF		<- Barbarian eclipse frames
+Bank 5: $8000 - $BFFF		<- Barbarian axe frames 
+Bank 6: $8000 - $BFFF		<- Barbarian blade frames
+
+Bank  7: $8000 - $BFFF		<- Skeleton frames 
+Bank  8: $8000 - $BFFF		<- Orc frames 
+Bank  9: $8000 - $BFFF		<- Mummy frames
+Bank 10: $8000 - $BFFF		<- Troll frames
+Bank 11: $8000 - $BFFF		<- Dal Gurak frames
+Bank 12: $8000 - $BFFF		<- Rock frames
+Bank 13: $8000 - $BFFF		<- Knight frames
+Bank 14: $8000 - $BFFF		<- Golem inf frames
+Bank 15: $8000 - $BFFF		<- Golem sup frames
+Bank 16: $8000 - $BFFF		<- Ogre inf frames
+Bank 17: $8000 - $BFFF		<- Ogre sup frames
+Bank 18: $8000 - $BFFF		<- Minotaur inf frames
+Bank 19: $8000 - $BFFF		<- Minotaur sup frames
+Bank 20: $8000 - $BFFF		<- Demon inf frames
+Bank 21: $8000 - $BFFF		<- Demon sup frames
+
+Bank 22: $8000 - $BFFF		<- Level 1 ($8000)
+Bank 23: $8000 - $BFFF		<- Tiles level 1 (test)
+Bank 24: $8000 - $BFFF		<- Level 2 ($8000)
+Bank 25: $8000 - $BFFF		<- Tiles level 2 (test)
+Bank 26: $8000 - $BFFF		<- Level 3 ($8000)
+Bank 27: $8000 - $BFFF		<- Tiles level 3 (test)
+Bank 28: $8000 - $BFFF		<- Level 4 ($8000)
+Bank 29: $8000 - $BFFF		<- Tiles level 4 (test)
+Bank 30: $8000 - $BFFF		<- Level 5 ($8000)
+Bank 31: $8000 - $BFFF		<- Tiles level 5 (test)
+Bank 32: $8000 - $BFFF		<- Level 6 ($8000)
+Bank 33: $8000 - $BFFF		<- Tiles level 6 (test)
+Bank 34: $8000 - $BFFF		<- Level 7 ($8000)
+Bank 35: $8000 - $BFFF		<- Tiles level 7 (test)
+Bank 36: $8000 - $BFFF		<- Level 8 ($8000)
+Bank 37: $8000 - $BFFF		<- Tiles level 8 (test)
+Bank 38: $8000 - $BFFF		<- Level 9 ($8000)
+Bank 39: $8000 - $BFFF		<- Tiles level 9 (test)
+
+Bank 40: $8000 - $BFFF		<- Music and SFX (compressed)
+
+Bank 41: $8000 - $BFFF		<- intro screens
+Bank 42: $8000 - $BFFF		<- ending screens
+Bank 43: $8000 - $BFFF      <- Level 0 (attract mode), menu screen

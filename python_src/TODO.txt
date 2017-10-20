@@ -1,0 +1,19 @@
+- Detalles pendientes de inventario (qué hacer cuando le damos a fuego)
+- Poner bien los ataques / defensas de los enemigos
+
+(pensar) para algunos objetos inactivos sí queremos que se ejecute un script (puertas, switches), para otros no (cajas). ¿Cómo lo gestionamos?
+
+Ideas: 
+	- Que el inactive_object correspondiente limpie el script del objeto
+	- (ASM) que el inactive_object ponga iy+0 e iy+1 a 0, y así no se llama nunca el script
+
+- Scripts pendientes:
+	* action_destroy (también en ASM)
+	* (también en ASM) CREATE_STILE, x, y, stile
+	* (también en ASM) CLEAR_STILE, x, y
+	* (también en ASM) CREATE_ENEMY, x, y, type ?????
+	* (también en ASM) ACTIVATE_ENEMY objid
+
+
+- (también en ASM): implementar daño de golpes en función de armas/nivel/etc
+- (también en ASM): implementar cambio de armas

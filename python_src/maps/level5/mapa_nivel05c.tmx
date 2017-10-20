@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="112" height="90" tilewidth="16" tileheight="16" backgroundcolor="#ffffff" nextobjectid="172">
+ <properties>
+  <property name="-----script-0_1" value="ACTION_IDLE, ACTION_MOVE, 8, 2, ACTION_IDLE, ACTION_WAIT,1, ACTION_PLAYER"/>
+  <property name="InitialCoords" value="32,112"/>
+  <property name="InitialScreen" value="0,1"/>
+  <property name="script-0_8" value="ACTION_IDLE,ACTION_MOVE, 4, 26, ACTION_IDLE, ACTION_WAIT, 1, ACTION_STRING,7, ACTION_FX, 7, ACTION_REMOVE_JAR, 124, ACTION_MOVE, 4, 28, ACTION_IDLE, ACTION_WAIT, 1, ACTION_STRING,6, ACTION_FINISH_LEVEL, 1, ACTION_PLAYER"/>
+  <property name="script-5_8" value="ACTION_CHECKPOINT, ACTION_PLAYER"/>
+  <property name="string-0" value="EL AGUA SAGRADA RECLAMA SU LUGAR."/>
+  <property name="string-0-en" value="TAKE THE HOLY WATER BACK TO WHERE IT BELONGS."/>
+  <property name="string-1" value="LOS DIOSES AGRADECEN EL AGUA SAGRADA QUE CALMA SU SED, PUEDES PASAR  A SU MORADA."/>
+  <property name="string-1-en" value="THE GODS ARE THANKFUL FOR THE HOLY WATER. YOU CAN NOW ENTER THEIR DWELLING."/>
+  <property name="string-2" value="AHORA EL FUEGO SAGRADO VA CONTIGO."/>
+  <property name="string-2-en" value="THE HOLY FIRE IS NOW WITH YOU."/>
+  <property name="string-3" value="EL B%CULO HA ABIERTO LAS PUERTAS DEL FUEGO."/>
+  <property name="string-3-en" value="THE CROZIER HAS OPENED THE DOORS OF FIRE."/>
+  <property name="string-4" value="EL B%CULO DE FUEGO QUIERE REGRESAR A SU LUGAR."/>
+  <property name="string-4-en" value="TAKE THE FIRE CROZIER BACK TO WHERE IT BELONGS."/>
+  <property name="string-5" value="YA PUEDES PASAR POR LA PUERTA DEL FUEGO."/>
+  <property name="string-5-en" value="YOU CAN NOW GO TROUGH THE DOOR OF FIRE."/>
+  <property name="string-6" value="DEFINITIVAMENTE DAL GURAK HA RECUPERADO SU FUERZA, Y AHORA INVOCA UNA TERRIBLE Y OSCURA MAGIA PARA INTENTAR RESCATAR A ASHERAT DESDE EL INFIERNO. DEBO DARME PRISA PARA COMPLETAR LA ESPADA, O YA NO HABR% ESPERANZA."/>
+  <property name="string-6-en" value="DAL GURAK HAS FINALLY RECOVERED HIS STRENGTH, AND HE IS CASTING THE DARKEST MAGIC TRYING TO RESCUE ASHERAT FROM HELL. I MUST HURRY UP AND COMPLETE THE SWORD, OR THERE WILL BE NO HOPE."/>
+  <property name="string-7" value="S;LO TIENES QUE CONSEGUIR OTRO FRAGMENTO PARA PODER TENER FINALMENTE EN TUS MANOS LA ESPADA DE IANNA."/>
+  <property name="string-7-en" value="THERE IS ONLY ONE MORE FRAGMENT TO RECOVER, AND YOU WILL HAVE THE SWORD OF IANNA IN YOUR HANDS."/>
+  <property name="string-8" value="ANTA$O UN LUGAR SAGRADO, EN EL QUE LOS VIAJEROS ENCONTRABAN DESCANSO. LARGO TIEMPO ABANDONADOS EN MITAD DEL DESIERTO, ESTOS TEMPLOS A&quot;N MANTIENEN SU ESPLENDOR. REZO PARA QUE LOS ENGENDROS DE DAL GURAK NO HAYAN LLEGADO A PROFANARLOS."/>
+  <property name="string-8-en" value="LONG TIME AGO THIS WAS A SACRED PLACE, WHERE PILGRIMS FOUND REST. ABANDONED IN THE MIDDLE OF THE DESERT, THESE TEMPLES STILL MAINTAIN SOME OF THEIR OLD MAGNIFICENCE. I PRAY THAT THE HORRIBLE CREATURES CONJURED UP BY DAL GURAK HAVE NOT POLLUTED THEM."/>
+  <property name="string-9" value="EL HACHA ESCONDIDA AHORA EST% EN TU PODER."/>
+  <property name="string-9-en" value="THE HIDDEN AXE NOW BELONGS TO YOU."/>
+ </properties>
+ <tileset firstgid="1" name="STILES" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="tiles_nivel05.png" trans="9067b3" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="257" name="Durezas" tilewidth="16" tileheight="16" tilecount="4" columns="4">
+  <image source="tiles_durezas.png" width="64" height="16"/>
+ </tileset>
+ <tileset firstgid="261" name="Divisiones" tilewidth="16" tileheight="16" tilecount="27" columns="9">
+  <image source="divisiones.png" width="144" height="48"/>
+ </tileset>
+ <tileset firstgid="288" name="Objetos" tilewidth="16" tileheight="16" tilecount="192" columns="16">
+  <image source="tiles_objetos.png" width="256" height="192"/>
+ </tileset>
+ <layer name="Fondo" width="112" height="90">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <objectgroup name="Objetos" visible="0">
+  <object id="1" name="001 - Teleport" gid="295" x="256" y="288" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="1"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 4, 1, 216, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="3" name="002 - Teleport" gid="295" x="1264" y="288" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="2"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 1, 1, 16, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="4" name="003 - Teleport" gid="295" x="240" y="288" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="3"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 1, 1, 24, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="5" name="004 - Teleport" gid="295" x="384" y="288" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="4"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 0, 2, 32, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="6" name="005 - Teleport" gid="295" x="896" y="288" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="5"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 3, 2, 200, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="7" name="006 - Teleport" gid="295" x="16" y="448" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="6"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 1, 1,104 , 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="8" name="007 - Teleport" gid="295" x="992" y="448" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="7"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 3, 1, 104, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="9" name="008 - Teleport" gid="295" x="640" y="288" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="8"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 1, 0, 88, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="10" name="009 - Teleport" gid="295" x="368" y="128" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="9"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 2, 1, 104, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="11" name="010 - Teleport" gid="295" x="0" y="128" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="10"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 4, 0, 216, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="12" name="011 - Teleport" gid="295" x="1264" y="128" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="11"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 0, 0, 24, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="13" name="012 - Teleport" gid="295" x="1152" y="288" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="12"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 5, 2, 88, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="14" name="013 - Teleport" gid="295" x="1392" y="448" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="13"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 4, 1, 104, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="15" name="014 - Teleport" gid="295" x="656" y="128" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="14"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 0, 4, 32, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="16" name="015 - Teleport" gid="295" x="16" y="768" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="15"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR,ACTION_TELEPORT, 2, 0, 112, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="18" name="016 - Switch" gid="289" x="736" y="768" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="16"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="19" name="017 - Box JAR" gid="292" x="736" y="528" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="17"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_JAR, 255, ACTION_CHANGE_OBJECT, OBJECT_HEALTH, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="20" name="018 - Box RIGHT" gid="293" x="384" y="576" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="18"/>
+    <property name="objtype" value="box_right"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 16, ACTION_FX, 2,  ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="21" name="019 - Box LEFT" gid="293" x="464" y="928" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="19"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="22" name="020 - Teleport" gid="295" x="480" y="928" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="20"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT,  0, 5, 24, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="23" name="021 - Box LEFT" gid="293" x="272" y="944" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="21"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 22,ACTION_WAIT_SWITCH_ON, 23, ACTION_REMOVE_BOXES, 255, ACTION_FX, 2, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="24" name="022 - Switch" gid="289" x="480" y="720" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="22"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="25" name="023 - Switch" gid="289" x="272" y="832" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="23"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="49" name="024 - Box JAR" gid="292" x="64" y="944" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="24"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_JAR, 255, ACTION_CHANGE_OBJECT, OBJECT_HEALTH, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="50" name="025 - Box JAR" gid="292" x="32" y="992" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="25"/>
+    <property name="objtype" value="box_right"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_BOXES, 255, ACTION_CHANGE_OBJECT, OBJECT_KEY_GREEN, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="51" name="026 - Switch" gid="289" x="16" y="1056" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="26"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="52" name="027 - Door" gid="294" x="752" y="1056" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="27"/>
+    <property name="objtype" value="door"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 26, ACTION_OPEN_DOOR, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="53" name="028 - Action" gid="297" x="0" y="816" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="28"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_SET_TIMER, 12, ACTION_WAIT_TIMER_GONE, ACTION_ADD_ENERGY, -4, ACTION_FX,  3, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="55" name="029 - Action" gid="297" x="592" y="432" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="29"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT, ACTION_CHECK_OBJECT_IN_INVENTORY, OBJECT_KEY_GREEN, ACTION_REMOVE_OBJECT_FROM_INVENTORY, OBJECT_KEY_GREEN, ACTION_FX, 7, ACTION_ADD_INVENTORY, OBJECT_KEY_BLUE,ACTION_STRING,0, ACTION_CHECKPOINT, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="56" name="030 - Teleport" gid="295" x="1024" y="608" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="30"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 6, 2, 216, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="57" name="031 - KILL" gid="296" x="464" y="416" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="31"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_KILL_PLAYER, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="58" name="032 - KILL AREA" gid="296" x="0" y="960" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="32"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT_EXT, 0,18,32,2, ACTION_ADD_ENERGY,-100, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="60" name="034 - KILL AREA" gid="296" x="0" y="1120" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="34"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT_EXT, 0,18,32,2, ACTION_ADD_ENERGY,-100, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="62" name="036 - KILL AREA" gid="296" x="256" y="1120" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="36"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT_EXT, 0,18,32,2, ACTION_ADD_ENERGY,-100, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="66" name="040 - KILL AREA" gid="296" x="768" y="1120" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="40"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT_EXT, 0,18,32,2, ACTION_ADD_ENERGY,-100, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="70" name="044 - KILL AREA" gid="296" x="512" y="960" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="44"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT_EXT, 0,18,32,2, ACTION_ADD_ENERGY,-100, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="71" name="045 - KILL AREA" gid="296" x="1024" y="480" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="45"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT_EXT, 0,18,32,2, ACTION_ADD_ENERGY,-100, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="72" name="046 - KILL" gid="296" x="1712" y="480" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="46"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_KILL_PLAYER, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="73" name="047 - KILL AREA" gid="296" x="512" y="1120" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="47"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT_EXT, 0,18,32,2, ACTION_ADD_ENERGY,-100, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="74" name="048 - Action" gid="297" x="512" y="816" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="48"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_SET_TIMER, 12, ACTION_WAIT_TIMER_GONE, ACTION_ADD_ENERGY, -4, ACTION_FX, 3, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="75" name="049 - Teleport" gid="295" x="768" y="512" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="49"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 2, 3, 192, 16"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="76" name="050 - Action" gid="297" x="880" y="112" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="50"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT, ACTION_CHECK_OBJECT_IN_INVENTORY, OBJECT_KEY_BLUE, ACTION_REMOVE_OBJECT_FROM_INVENTORY, OBJECT_KEY_BLUE, ACTION_FX, 7, ACTION_STRING,1, ACTION_SET_OBJECT_STATE, 51, 1, ACTION_FX, 14,ACTION_CHECKPOINT, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="77" name="051 - Switch" gid="289" x="1408" y="240" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="51"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_NONE,ACTION_NONE,ACTION_NONE,ACTION_NONE,ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="78" name="052 - Door" gid="294" x="1776" y="416" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="52"/>
+    <property name="objtype" value="door"/>
+    <property name="script" value="ACTION_WAIT_OBJECT_STATE, 51, 1, ACTION_NOP, ACTION_OPEN_DOOR, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="79" name="053 - Teleport" gid="295" x="1136" y="128" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="53"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 5,0, 32, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="80" name="054 - Enemy" gid="288" x="1744" y="48" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="54"/>
+    <property name="objtype" value="enemy_golem"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NONE, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="81" name="055 - Box LEFT" gid="293" x="1744" y="96" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="55"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 56, ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="82" name="056 - Box LEFT" gid="293" x="1744" y="128" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="56"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 56, ACTION_REMOVE_BOXES, 255, ACTION_CHANGE_OBJECT,OBJECT_KEY_YELLOW,ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="83" name="057 - Teleport" gid="295" x="1296" y="128" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="57"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 4, 0, 88, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="84" name="058 - Teleport" gid="295" x="1776" y="448" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="58"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 4, 3, 16, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="85" name="059 - Teleport" gid="295" x="1776" y="1248" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="59"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 4, 2, 16, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="86" name="060 - Box RIGHT" gid="293" x="1504" y="608" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="60"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_CONTACT, ACTION_CHECK_OBJECT_IN_INVENTORY,OBJECT_KEY_PURPLE,ACTION_FX, 2, ACTION_REMOVE_BOXES, 255, ACTION_REMOVE_OBJECT_FROM_INVENTORY, OBJECT_KEY_PURPLE,  ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="87" name="061 - Box LEFT" gid="293" x="1232" y="768" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="61"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_BOXES, 255, ACTION_CHANGE_OBJECT, OBJECT_KEY_WHITE, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="88" name="062 - Box LEFT" gid="293" x="1488" y="544" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="62"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_BOXES, 255, ACTION_CHANGE_OBJECT, OBJECT_HEALTH, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="90" name="063 - Box LEFT" gid="293" x="1200" y="768" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="63"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_CONTACT, ACTION_CHECK_OBJECT_IN_INVENTORY,OBJECT_KEY_YELLOW, ACTION_FX, 14, ACTION_REMOVE_BOXES, 255, ACTION_REMOVE_OBJECT_FROM_INVENTORY, OBJECT_KEY_YELLOW, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="91" name="064 - Action" gid="297" x="432" y="432" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="64"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT, ACTION_CHECK_OBJECT_IN_INVENTORY, OBJECT_KEY_WHITE, ACTION_REMOVE_OBJECT_FROM_INVENTORY, OBJECT_KEY_WHITE, ACTION_FX, 7, ACTION_ADD_INVENTORY, OBJECT_KEY_PURPLE,ACTION_STRING,2, ACTION_CHECKPOINT, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="92" name="065 - Box LEFT" gid="293" x="1648" y="928" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="65"/>
+    <property name="objtype" value="box_right"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="93" name="066 - Box LEFT" gid="293" x="1408" y="880" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="66"/>
+    <property name="objtype" value="box_right"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="94" name="067 - Box LEFT" gid="293" x="1136" y="928" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="67"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="95" name="068 - Box LEFT" gid="293" x="1392" y="928" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="68"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="96" name="069 - Box JAR" gid="292" x="1456" y="944" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="69"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_PICKUP, ACTION_REMOVE_JAR, 255, ACTION_ADD_INVENTORY, OBJECT_KEY_RED, ACTION_STRING,4, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="97" name="070 - Action" gid="297" x="128" y="112" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="70"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT, ACTION_CHECK_OBJECT_IN_INVENTORY, OBJECT_KEY_RED, ACTION_REMOVE_OBJECT_FROM_INVENTORY, OBJECT_KEY_RED, ACTION_FX, 7, ACTION_STRING,5, ACTION_SET_OBJECT_STATE, 72, 1, ACTION_FX, 14, ACTION_CHECKPOINT, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="98" name="071 - Door" gid="294" x="1024" y="416" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="71"/>
+    <property name="objtype" value="door"/>
+    <property name="script" value="ACTION_WAIT_OBJECT_STATE, 72, 1, ACTION_NOP, ACTION_OPEN_DOOR, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="99" name="072 - Switch" gid="289" x="1456" y="224" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="72"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_NONE,ACTION_NONE,ACTION_NONE,ACTION_NONE,ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="100" name="073 - Teleport" gid="295" x="1024" y="448" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="73"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_TELEPORT, 6, 7, 216, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="101" name="074 - Switch" gid="289" x="1040" y="1248" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="74"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="102" name="075 - Switch" gid="289" x="1040" y="1088" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="75"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="103" name="076 - Switch" gid="289" x="1760" y="1088" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="76"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="104" name="077 - Switch" gid="289" x="1376" y="1360" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="77"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="105" name="078 - Switch" gid="289" x="1424" y="1360" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="78"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="106" name="079 - Box LEFT" gid="293" x="1696" y="1088" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="79"/>
+    <property name="objtype" value="box_right"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON,74,ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="107" name="080 - KILL" gid="296" x="1680" y="1088" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="80"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_OFF,74,ACTION_WAIT_CONTACT,ACTION_KILL_PLAYER, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="108" name="081 - KILL" gid="296" x="1120" y="1088" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="81"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_OFF,76,ACTION_WAIT_CONTACT,ACTION_KILL_PLAYER, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="109" name="082 - Box LEFT" gid="293" x="1104" y="1088" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="82"/>
+    <property name="objtype" value="box_left"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON,76,ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="110" name="083 - KILL" gid="296" x="1392" y="1264" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="83"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_OFF,75,ACTION_WAIT_CONTACT,ACTION_KILL_PLAYER, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="111" name="084 - Box LEFT" gid="293" x="1408" y="1264" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="84"/>
+    <property name="objtype" value="box_right"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON,75, ACTION_FX, 2,ACTION_REMOVE_BOXES, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="113" name="086 - KILL AREA" gid="296" x="1024" y="1280" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="86"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT_EXT, 0,18,32,2, ACTION_ADD_ENERGY,-100, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="114" name="087 - Enemigo" gid="288" x="1728" y="1088" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="87"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="116" name="088 - Box JAR" gid="292" x="1760" y="1424" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="88"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_JAR, 255, ACTION_CHANGE_OBJECT, OBJECT_KEY_YELLOW, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="117" name="089 - Door" gid="294" x="1616" y="1376" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="89"/>
+    <property name="objtype" value="door"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 77, ACTION_OPEN_DOOR, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="118" name="090 - Box LEFT" gid="293" x="1184" y="1408" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="90"/>
+    <property name="objtype" value="box_right"/>
+    <property name="script" value="ACTION_WAIT_CONTACT, ACTION_CHECK_OBJECT_IN_INVENTORY,OBJECT_KEY_YELLOW,ACTION_FX, 2, ACTION_REMOVE_BOXES, 255, ACTION_REMOVE_OBJECT_FROM_INVENTORY, OBJECT_KEY_YELLOW, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="119" name="091 - Switch" gid="289" x="832" y="1152" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="91"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="120" name="092 - Switch" gid="289" x="336" y="1200" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="92"/>
+    <property name="objtype" value="switch"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 255, ACTION_TOGGLE_SWITCH_ON, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="121" name="093 - Action" gid="297" x="512" y="1136" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="93"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 78, ACTION_FX, 14, ACTION_MOVE_STILE, 3, 5, 0, 1, 4, ACTION_FX, 14, ACTION_MOVE_STILE, 5, 5, 0, 1, 4, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="123" name="094 - Action" gid="297" x="256" y="1136" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="94"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 91, ACTION_FX, 14, ACTION_MOVE_STILE, 6, 1, 0, 1, 5, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="124" name="095 - Door" gid="294" x="608" y="1376" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="95"/>
+    <property name="objtype" value="door"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 92, ACTION_OPEN_DOOR, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="125" name="096 - Door" gid="294" x="608" y="1376" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="96"/>
+    <property name="objtype" value="door"/>
+    <property name="script" value="ACTION_WAIT_SWITCH_ON, 92, ACTION_OPEN_DOOR, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="126" name="097 - Enemy" gid="288" x="384" y="1408" width="16" height="16">
+   <properties>
+    <property name="energy" value="6"/>
+    <property name="objid" value="97"/>
+    <property name="objtype" value="enemy_golem"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NONE, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="127" name="098 - Door" gid="294" x="336" y="1376" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="98"/>
+    <property name="objtype" value="door"/>
+    <property name="script" value="ACTION_WAIT_DEAD, 97, ACTION_OPEN_DOOR, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="128" name="099 - KILL AREA" gid="296" x="768" y="1440" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="99"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT_EXT, 0,18,32,2, ACTION_ADD_ENERGY,-100, ACTION_RESTART_SCRIPT"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="129" name="100 - Enemigo" gid="288" x="1056" y="1088" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="100"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="130" name="101 - Enemigo" gid="288" x="1568" y="1248" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="101"/>
+    <property name="objtype" value="enemy_troll"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="131" name="102 - Enemigo" gid="288" x="1728" y="1408" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="102"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="132" name="103 - Enemigo" gid="288" x="1040" y="1408" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="103"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="133" name="104 - Enemigo" gid="288" x="624" y="1408" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="104"/>
+    <property name="objtype" value="enemy_golem"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="134" name="105 - Enemigo" gid="288" x="1360" y="1248" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="105"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="135" name="106 - Enemigo" gid="288" x="720" y="608" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="106"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="136" name="107 - Enemigo" gid="288" x="112" y="768" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="107"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="137" name="108 - Enemigo" gid="288" x="1456" y="544" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="108"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="138" name="109 - Enemigo" gid="288" x="1120" y="768" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="109"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="139" name="110 - Enemigo" gid="288" x="1568" y="768" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="110"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="140" name="111 - Enemigo" gid="288" x="1120" y="832" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="111"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="141" name="112 - Enemigo" gid="288" x="1376" y="1040" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="112"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="142" name="113 - Enemigo" gid="288" x="1440" y="128" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="113"/>
+    <property name="objtype" value="enemy_troll"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="143" name="114 - Enemigo" gid="288" x="1648" y="448" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="114"/>
+    <property name="objtype" value="enemy_troll"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="144" name="115 - Enemigo" gid="288" x="1136" y="448" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="115"/>
+    <property name="objtype" value="enemy_troll"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="145" name="116 - Enemigo" gid="288" x="1728" y="560" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="116"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="146" name="117 - Enemigo" gid="288" x="1648" y="608" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="117"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="147" name="118 - Enemigo" gid="288" x="1680" y="928" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="118"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="148" name="119 - Enemigo" gid="288" x="704" y="768" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="119"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="149" name="120 - Enemigo" gid="288" x="224" y="448" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="120"/>
+    <property name="objtype" value="enemy_troll"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="150" name="121 - Enemigo" gid="288" x="784" y="448" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="121"/>
+    <property name="objtype" value="enemy_troll"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="151" name="122 - Enemigo" gid="288" x="432" y="928" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="122"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="152" name="123 - Box RIGHT" gid="293" x="656" y="864" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="123"/>
+    <property name="objtype" value="box_right"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_BOXES, 255, ACTION_CHANGE_OBJECT, OBJECT_HEALTH, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="154" name="124 - Box JAR" gid="292" x="112" y="1392" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="124"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_JAR, 255, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="155" name="125 - Box JAR" gid="292" x="1616" y="848" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="125"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_JAR, 255, ACTION_CHANGE_OBJECT, OBJECT_MEAT, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="156" name="126 - Box JAR" gid="292" x="1552" y="528" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="126"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_JAR, 255, ACTION_CHANGE_OBJECT, OBJECT_MEAT, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="157" name="127 - Box JAR" gid="292" x="1616" y="896" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="127"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_JAR, 255, ACTION_CHANGE_OBJECT, OBJECT_MEAT, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="159" name="085 - Enemigo" gid="288" x="400" y="544" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="85"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="160" name="039 - Box JAR - TEXTO PRIMERA PANTALLA" gid="288" x="48" y="304" width="16" height="16">
+   <properties>
+    <property name="energy" value="1"/>
+    <property name="objid" value="39"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_CONTACT, ACTION_STRING, 8, ACTION_SET_OBJECT_STATE, 39, 1, ACTION_CHECKPOINT, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="161" name="038 - Enemigo" gid="288" x="1328" y="928" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="38"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="162" name="043 - Enemigo" gid="288" x="1392" y="768" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="43"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="163" name="037 - Enemigo" gid="288" x="1440" y="608" width="16" height="16">
+   <properties>
+    <property name="energy" value="4"/>
+    <property name="objid" value="37"/>
+    <property name="objtype" value="enemy_knight"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="167" name="039 - Enemigo" gid="288" x="1376" y="240" width="16" height="16">
+   <properties>
+    <property name="energy" value="1"/>
+    <property name="objid" value="39"/>
+    <property name="objtype" value="enemy_squeleton"/>
+    <property name="script" value="ACTION_PATROL, FLAG_PATROL_NOFALL, ACTION_FIGHT, FLAG_FIGHT_NOFALL"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="169" name="033 - Teleport" gid="295" x="1408" y="1040" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="33"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CROSS_DOOR, ACTION_TELEPORT, 6,1, 16, 112"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="170" name="035 - Box JAR" gid="292" x="1648" y="272" width="16" height="16">
+   <properties>
+    <property name="energy" value="5"/>
+    <property name="objid" value="35"/>
+    <property name="objtype" value="box_jar"/>
+    <property name="script" value="ACTION_WAIT_DESTROYED, 255, ACTION_REMOVE_JAR, 255, ACTION_STRING, 9, ACTION_ADD_WEAPON, 2, ACTION_NONE"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+  <object id="171" name="041 - Teleport" gid="295" x="1760" y="288" width="16" height="16">
+   <properties>
+    <property name="energy" value="0"/>
+    <property name="objid" value="41"/>
+    <property name="objtype" value="teleport"/>
+    <property name="script" value="ACTION_WAIT_CONTACT, ACTION_TELEPORT, 5,7, 112, 64"/>
+    <property name="scriptid" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Dureza" width="112" height="90" visible="0" opacity="0.67">
+  <data encoding="base64" compression="zlib">
+   eJztneFuwyAMhJeu7//M06RVihjGZ2wwkPtx0tYEMP7gQhjVruvr66K69UpWdv93lzeHHmbkR35PF/ntLfLbWxk55PqF/Kh1+b0v2XvfC+SspdmxZ/Ojnq3s+fZ0kcPeIr+9RX57i/z2Fvnl59/LjvzW5KdxIb98Sbm/70NI+w7kl68y95b9o+x3/xMUwY96trJ8IzuGE0R+e4v89hb57a2n89t57Dx9/ZI9dnaLv/Vu+vq7ftfns1P6v2v8GjdEo86unMCP+j//s2OxxJY9jjzj79uhiLxG1OuNP5uDh1+E/2TG72k/O/7s3Gf33+uBWtlyvmYz0/xDi7O8bsldyxetuUH8E8lB9vjzalf/iVp/9Jb3Podb5S3vCSvy61kDeduy+qQ3Dq08Ggvq/2j52tga+dyoxT5j/RkxfiLGYcT4HcVmRvvkdwY/r39G8+v1D6ufIs8m6/2jVYvnFH6aRvLz7AO1+tZ6t6B/2stL/Hpj8MRGfmfwQ/yz9f6m3V+rU/OgiD6WdWn+g7w/aP5Ztl+ro2yndb12rSzvnTue8XX6/JOuaWWReqP4WfdNyG8+P8Q/UY5SPV7/tJSVWKB7Pi3vbK0ZP9c1/5T6MmP/BeXomX8Ra4eo+edpe3b8lrxrHMkvJv6WIvIueVJPW9ZnT8tfkboRSf7Z8kfpudHz/l62Ec3PM/88/GrjCNl/6pWFX+T+ywoeYqkjevz0lh9ZP1I2i9/vMxHdB4iOfQd+aN8k/7TyQ9f970ue/5p/InFpMWj+Wd7n9VetPPL8u8dkfc6h/LT7S26j+EXPj9Hz29rv2u+j+bXmQ+/6Jeos/ar8pJwg/MrnkpefdxzU+KG+r/mpVA+yv4GsL2v+KHkmUhZdf47mJ7Ho4Rc1fiLnT+s6GjNyXy3+npySXz4/SeV38mrff/Guzyxttfgha2Br/3eQN/9l/jz1SV6PjNGn8ivzkCVrDN64V+m3N/5V+kF+Pn5lX8rPyp+lslo5tH1r/qW1+On8suPIiv+U/u/aB/Lbuw/WuKX9ixGxWdbREfykZ5j1uvQMRT7//dn6/b+o/mePxVNi/8SEnn86MQfW2O/S9j2QfZHaPgoqrT1L+546eoT4ZG3fiVpDGfxGzONPnFlegvplVA4uYz0ZbVr5zRT5ncWv9vfUWozR/Cz+uTK/DIae2LPjOIXf64qL6wn8InOw2vyrnbebyW/G/ssoftkx3WNDY8+OlfzIbyQ/D2eknOaX2vnlu2r7QdYzOeUZQKRMj2bxG61IfhEq/45Mfnma3S+0LfIjv1keZBXy/jCKX80vrecaZ/EbOS5WqKOH371Mb1nyI7/e/mfkvmf9GSnLGhM5V+7Nkef/D2XNndXGY++6x8NPej+dea6I/PC6T1XG/zKSzvKg36nqOR/0A2hKXB0=
+  </data>
+ </layer>
+ <layer name="Divisiones" width="112" height="90" visible="0" opacity="0.73">
+  <data encoding="base64" compression="zlib">
+   eJzt2D1OQzEUBeG8IoD/AIcC2P9GyZPiBcSDbFme4pZfeU8x1+Nyeem81/td9VP9+/3eHvfx5H0+fIA+Qp+gz9AX6Cv0zzq9Xq/X6/V6vV6/p/++30/n/eqn+9n9QP8//eVsKL3/H6CP0CfoM/QF+gr9yvuv1+v1er1er9frx/nZ/UBvf9nZt/5yNpDe/w/QR+gT9Bn6An2FfuX91+v1er1er9fr9eP87H6gt7/s7Ft/ORtG7/8H6CP0CfoMfYG+Qr/y/uv1er1er9fr9fpxfnY/0Ntfdvatv5wNovf/A/QR+gR9hr5AX6Ffef/1er1er9fr9Xr9OD+7H+jtLzv71l/OhtD7/wH6CH2CPkNfoK/Qr7z/er1er9fr9Xq9fpyf3Q/09pedfesvZwPo/f8AfYQ+QZ+hL9BX6Ffef71er9fr9Xq9Xj/Oz+4HevvLzr71l9vR//8B+gh9gj5DX6Cv0K+8/3q9Xq/X6/V6vX6cn90P9PaXnX3rL19H//8H6CP0CfoMfYG+Qr/y/uv1er1er9fr9fpxfnY/0DP/B+QNdMA=
+  </data>
+ </layer>
+ <layer name="PrimerPlano" width="112" height="90">
+  <data encoding="base64" compression="zlib">
+   eJzt3U0KgzAQBtCcq/c2N0hv5M+yEVwMYquLYjvwHnwQxUVwYFxEmFKAOz22kJP6/afW89zWQ08N92t4Tv1yUz/IIfbkbOI3BAAAAAAAgHyGsHbuA6za7vrb59lr3xl7pp656D3AsU//08Qesty2IwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyG0/B2z87XbSeDc/7epctaP3flaHF8WFKww=
+  </data>
+ </layer>
+</map>
