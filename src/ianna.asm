@@ -508,9 +508,9 @@ load_strings_common:
 	ld a, 1			; Set ROM bank 1
 	call setROM2
 	; FIXME: this is just meant to be running quick tests without changing the map
-	;ld a, 6
-	;ld (current_levelx), a
 	;ld a, 2
+	;ld (current_levelx), a
+	;ld a, 1
 	;ld (current_levely), a
 	ret
 
