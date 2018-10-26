@@ -947,13 +947,13 @@ string_art:   	db "ART: PAGANTIPACO",0
 string_music:   db "  SOUND: MCALBY ",0
 string_long: db "                                ",0
 string_1: db "  PLAY  ",0
-string_1_es: db " JUGAR  ",0
+string_1_es: db " JOUER  ",0
 string_2: db "PASSWORD",0
 string_3: db "ENGLISH ",0
-string_3_es: db "ESPA$OL ",0
-string_4_1:  db "MUSIC/FX",0
-string_4_2:  db " MUSIC  ",0
-string_4_3:  db "   FX   ",0
+string_3_es: db "FRAN*AIS",0
+string_4_1:  db "MUS./SON",0
+string_4_2:  db "MUSIQUE ",0
+string_4_3:  db "  SON   ",0
 weapon_masks: db $80, $40, $20, $10
 secret_pass: db '0CAFECAFE0'
 wave_delta: db 2, 2, 1, 1, -1, -1, -2, -2, -2, -2, -1, -1, 1, 1, 2, 2

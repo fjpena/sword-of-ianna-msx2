@@ -355,7 +355,7 @@ end_credits:
 
 
 	ld iy, credits01
-	ld b, 37
+	ld b, 40
 end_credits_line:
 	push iy
 	push bc
@@ -440,22 +440,25 @@ credits17: db '               ',0
 credits18: db 'PROOFREADING:  ',0
 credits19: db '  FELIX CLOWDER',0
 credits20: db '               ',0
-credits21: db 'TESTING:       ',0
-credits22: db '         METR81',0
-credits23: db '         IVANZX',0
-credits24: db 'RETROWORKS TEAM',0
-credits25: db '               ',0
-credits26: db 'WE WANT TO SAY ',0
-credits27: db '  THANK YOU TO:',0
+credits21: db 'FR TRANSLATION:',0
+credits22: db '        PICCOLO',0
+credits23: db '               ',0
+credits24: db 'TESTING:       ',0
+credits25: db '         METR81',0
+credits26: db '         IVANZX',0
+credits27: db 'RETROWORKS TEAM',0
 credits28: db '               ',0
-credits29: db 'FRIENDWARE AND ',0
-credits30: db '   REBEL ACT   ',0
-credits31: db '  STUDIOS, FOR ',0
-credits32: db '    CREATING   ',0
-credits33: db 'BLADE: THE EDGE',0
-credits34: db '  OF DARKNESS  ',0
-credits35: db '               ',0
-credits36: db '  YOU, PLAYER, ',0
-credits37: db '  FOR PLAYING  ',0
+credits29: db 'WE WANT TO SAY ',0
+credits30: db '  THANK YOU TO:',0
+credits31: db '               ',0
+credits32: db 'FRIENDWARE AND ',0
+credits33: db '   REBEL ACT   ',0
+credits34: db '  STUDIOS, FOR ',0
+credits35: db '    CREATING   ',0
+credits36: db 'BLADE: THE EDGE',0
+credits37: db '  OF DARKNESS  ',0
+credits38: db '               ',0
+credits39: db '  YOU, PLAYER, ',0
+credits40: db '  FOR PLAYING  ',0
 
 credits_end: db '    THE END    ',0

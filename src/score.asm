@@ -390,7 +390,7 @@ cleansc_x_loop:
 ; Draw password for level
 score_password_string_rom: db "PASSWORD:1234567890",0
 score_gameover_string_en: db "    PRESS FIRE",0
-score_gameover_string:    db "   PULSA DISPARO",0
+score_gameover_string:    db " APPUIE SUR FIRE",0
 
 draw_gameover_string:
         ld a, (language)
