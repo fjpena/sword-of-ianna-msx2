@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="112" height="70" tilewidth="16" tileheight="16" nextobjectid="541">
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="112" height="70" tilewidth="16" tileheight="16" infinite="0" nextobjectid="541">
  <properties>
   <property name="InitialCoords" value="64,64"/>
   <property name="InitialScreen" value="0,0"/>
@@ -12,9 +12,9 @@
   <property name="script-2_3" value="ACTION_CHECKPOINT, ACTION_PLAYER"/>
   <property name="script-3_0" value="ACTION_CHECKPOINT, ACTION_PLAYER"/>
   <property name="script-4_6" value="ACTION_CHECKPOINT, ACTION_PLAYER"/>
-  <property name="string-0" value="EL FUEGO QUE NO QUEMA."/>
+  <property name="string-0" value="LE FEU QUI NE BR;LE PAS."/>
   <property name="string-0-en" value="THE FIRE WHICH DOES NOT BURN."/>
-  <property name="string-1" value="GRACIAS POR TRAER ESTE OBJETO."/>
+  <property name="string-1" value="MERCI DE M'AVOIR APPORT? CET OBJET."/>
   <property name="string-1-en" value="THANK YOU FOR BRINGING ME THIS OBJECT."/>
  </properties>
  <tileset firstgid="1" name="STILES" tilewidth="16" tileheight="16" tilecount="256" columns="16">

@@ -326,7 +326,7 @@ class IannaGame():
 		f.write("\n\n; STRINGS\n\n")
 		counter = 0
 		for string in levelstrings:
-			f.write("string"+str(counter)+":\t db \'"+string+"\',0\n")
+			f.write("string"+str(counter)+":\t db \""+string+"\",0\n")
 			counter = counter + 1
 
 		f.write("\n\n; Pickable object types\n")

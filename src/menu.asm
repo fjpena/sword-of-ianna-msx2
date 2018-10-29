@@ -937,10 +937,10 @@ password_checksum_loop
 	djnz password_checksum_loop
 	ret
 
-string_enterpassword: db "ENTER PASSWORD:",0
+string_enterpassword: db "PASSWORD:",0
 string_passwordok: db   "  PASSWORD OK",0
-string_passwordfail: db "INVALID PASSWORD",0
-string_presskey: db "PRESS KEY FOR  ",0
+string_passwordfail: db "  PASSWORD FAUX",0
+string_presskey: db "APP. S",0
 string_credits: dw string_code, string_art, string_music
 string_code:	db "  CODE: UTOPIAN ",0
 string_art:   	db "ART: PAGANTIPACO",0

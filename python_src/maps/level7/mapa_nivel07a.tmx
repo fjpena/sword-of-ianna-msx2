@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="112" height="70" tilewidth="16" tileheight="16" backgroundcolor="#ff0000" nextobjectid="496">
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="112" height="70" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#ff0000" nextobjectid="496">
  <properties>
   <property name="InitialCoords" value="64,80"/>
   <property name="InitialScreen" value="1,0"/>
@@ -16,25 +16,25 @@
   <property name="script-5_0" value="ACTION_WAIT, 5, ACTION_TELEPORT_EXT, 6,0,8,112"/>
   <property name="script-6_0" value="ACTION_WAIT, 5, ACTION_TELEPORT_EXT,0,6,8,112"/>
   <property name="script-6_2" value="ACTION_CHECKPOINT, ACTION_SET_OBJECT_STATE,127,0,ACTION_PLAYER"/>
-  <property name="string-0" value="EL TEMPLO DE IANNA, ALL&gt; DONDE MI DESTINO DEBE CUMPLIRSE. ESPERO QUE LA DIOSA ME CONSIDERE DIGNO Y ME CONCEDA SU DON."/>
+  <property name="string-0" value="LE TEMPLE DE IANNA. C'EST ICI QUE JE DOIS ACCOMPLIR MON DESTIN. J'ESP$RE QUE LA D?ESSE ME JUGERA DIGNE ET M'ACCORDERA SA B?N?DICTION."/>
   <property name="string-0-en" value="THE TEMPLE OF IANNA, WHERE MY FATE MUST BE FULFILLED. I HOPE THE GODDESS WILL CONSIDER ME WORTHY AND GIVE ME HER GIFT."/>
-  <property name="string-1" value="JARKUM, HAS DEMOSTRADO SER CAPAZ DE DERROTAR A LOS SIRVIENTES DEL ENEMIGO. DAL GURAK VUELVE A ESCONDERSE EN SU TORRE DE LA HECHICER&gt;A, VE Y M%NDALE AL INFIERNO. TIENES POCO TIEMPO, CADA D&gt;A QUE PASA ES M%S PODEROSO, Y PRONTO SER% CAPAZ DE RESUCITAR A ASHERAT. SI ESO OCURRE, NI SIQUIERA MI ESPADA SER% ESTA VEZ CAPAZ DE AYUDAR AL MUNDO."/>
+  <property name="string-1" value="JARKUM, TU AS PROUV? QUE TU ?TAIS CAPABLE DE VAINCRE LES SERVITEURS DE L'ENNEMI. DAL GURAK S'EST UNE FOIS ENCORE RETRANCH? DANS SA TOUR DE LA SORCELLERIE. VA L%-BAS ET ENVOIE-LE EN ENFER. LE TEMPS PRESSE, IL DEVIENT PLUS PUISSANT CHAQUE JOUR, ET IL SERA BIENTOT EN MESURE DE RESSUSCITER ASHERAT. S'IL Y PARVIENT, M&gt;ME MON ?P?E NE POURRA PAS SAUVER LE MONDE."/>
   <property name="string-1-en" value="JARKUM, YOU HAVE PROVEN THAT YOU CAN DEFEAT THOSE WHO SERVE THE ENEMY. DAL GURAK IS AGAIN IN HIS TOWER OF SORCERY, GO THERE AND SEND HIM TO HELL. TIME IS RUNNING OUT, HE IS MORE POWERFUL EVERY DAY, AND SOON HE WILL BE ABLE TO RESURRECT ASHERAT. SHOULD THAT HAPPEN, EVEN MY SWORD WILL NOT BE ENOUGH TO HELP YOU."/>
-  <property name="string-2" value="LA DIOSA ACEPTA TU OFRENDA: ESTA PARTE DE LA ESPADA QUEDA EN SU PODER."/>
+  <property name="string-2" value="LA D?ESSE ACCEPTE TON OFFRANDE."/>
   <property name="string-2-en" value="THE GODDESS ACCEPTS YOUR OFFERING."/>
-  <property name="string-3" value="POR FIN LAS CUATRO PARTES DE LA ESPADA DE IANNA EST%N JUNTAS."/>
+  <property name="string-3" value="LES QUATRE FRAGMENTS DE L'?P?E SONT ENFIN R?UNIS."/>
   <property name="string-3-en" value="THE FOUR FRAGMENTS OF THE SWORD ARE FINALLY TOGETHER."/>
  </properties>
- <tileset firstgid="1" name="STILES" tilewidth="16" tileheight="16" tilecount="256">
+ <tileset firstgid="1" name="STILES" tilewidth="16" tileheight="16" tilecount="256" columns="16">
   <image source="tiles_nivel07.png" trans="9067b3" width="256" height="256"/>
  </tileset>
- <tileset firstgid="257" name="Durezas" tilewidth="16" tileheight="16" tilecount="4">
+ <tileset firstgid="257" name="Durezas" tilewidth="16" tileheight="16" tilecount="4" columns="4">
   <image source="tiles_durezas.png" width="64" height="16"/>
  </tileset>
- <tileset firstgid="261" name="Divisiones" tilewidth="16" tileheight="16" tilecount="27">
+ <tileset firstgid="261" name="Divisiones" tilewidth="16" tileheight="16" tilecount="27" columns="9">
   <image source="divisiones.png" width="144" height="48"/>
  </tileset>
- <tileset firstgid="288" name="Objetos" tilewidth="16" tileheight="16" tilecount="192">
+ <tileset firstgid="288" name="Objetos" tilewidth="16" tileheight="16" tilecount="192" columns="16">
   <image source="tiles_objetos.png" width="256" height="192"/>
  </tileset>
  <layer name="Fondo" width="112" height="70">

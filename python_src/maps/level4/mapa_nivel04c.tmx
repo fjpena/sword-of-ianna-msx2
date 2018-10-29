@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="112" height="90" tilewidth="16" tileheight="16" backgroundcolor="#000000" nextobjectid="386">
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="112" height="90" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#000000" nextobjectid="386">
  <properties>
   <property name="InitialCoords" value="16,48"/>
   <property name="InitialScreen" value="0,3"/>
@@ -7,9 +7,9 @@
   <property name="script-1_3" value="ACTION_CHECKPOINT, ACTION_PLAYER"/>
   <property name="script-5_0" value="ACTION_IDLE,ACTION_MOVE, 8, 12, ACTION_FX, 14, ACTION_IDLE, ACTION_MOVE_STILE, 0, 6, 0, 1, 2, ACTION_MOVE_STILE, 0, 5, 0, 1, 2, ACTION_MOVE_STILE, 0, 4, 0, 1, 2, ACTION_PLAYER"/>
   <property name="script-6_0" value="ACTION_IDLE,ACTION_MOVE, 8, 45, ACTION_IDLE, ACTION_STRING, 1, ACTION_FINISH_LEVEL, 1, ACTION_PLAYER"/>
-  <property name="string-0" value="LA FORTALEZA DE NEMRUT, RECONQUISTADA POR LOS HEREDEROS DE SARGON, FUE DURANTE LUSTROS EL &quot;NICO BASTI;N SEGURO DE LA CORDILLERA DE LA MEDIA LUNA. AQU&gt; SE ENCONTRABA BIRR, LA GEMA BLANCA, Y AQU&gt; DEBE ENCONTRARSE EL FRAGMENTO DE LA ESPADA DE IANNA."/>
+  <property name="string-0" value="LA FORTERESSE DE NEMRUT, RECONQUISE PAR LES H?RITIERS DE SARGON, FUT PENDANT DES ANN?ES LE SEUL HAVRE DE PAIX DE LA CORDILL$RE DE LA DEMI-LUNE. C'EST ICI QUE SE TROUVAIT BIRR, LA GEMME BLANCHE, ET QUE DEVRAIT SE TROUVER LE DEUXI$ME FRAGMENT DE L'?P?E DE IANNA."/>
   <property name="string-0-en" value="THE FORTRESS OF NEMRUT, RECAPTURED BY THE HEIRS OF SARGON, WAS FOR MANY YEARS THE ONLY SAFE HAVEN OF THE HALF MOON RANGE. HERE WAS BIRR, THE WHITE GEM, AND HERE SHOULD RESIDE THE SECOND FRAGMENT FROM THE SWORD OF IANNA."/>
-  <property name="string-1" value="ESTE DEMONIO S;LO PUEDE SER CREACI;N DE UN HECHICERO MALIGNO. SUS OSCURAS CRIATURAS EST%N INVADIENDO LAS TIERRAS DE LA REGI;N DE SARIKAN, Y DEBEN SER ANIQUILADAS ANTES DE QUE SEA DEMASIADO TARDE."/>
+  <property name="string-1" value="CE D?MON N'A PU &gt;TRE INVOQU? QUE PAR UN SORCIER MAL?FIQUE. SES SOMBRES CR?ATURES SONT EN TRAIN D'ENVAHIR LES TERRES DE LA R?GION DE SARIKAN. IL FAUT LES AN?ANTIR AVANT QU'IL NE SOIT TROP TARD."/>
   <property name="string-1-en" value="THIS DEMON CAN ONLY BE SUMMONED BY AN EVIL SORCERER. HIS DARK CREATURES ARE INVADING THE LANDS OF THE REGION OF SARIKAN, AND MUST BE ANNIHILATED BEFORE IT IS TOO LATE."/>
  </properties>
  <tileset firstgid="1" name="STILES" tilewidth="16" tileheight="16" tilecount="256" columns="16">

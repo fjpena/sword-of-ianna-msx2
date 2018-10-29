@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="112" height="90" tilewidth="16" tileheight="16" backgroundcolor="#ffffff" nextobjectid="172">
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="112" height="90" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#ffffff" nextobjectid="172">
  <properties>
   <property name="-----script-0_1" value="ACTION_IDLE, ACTION_MOVE, 8, 2, ACTION_IDLE, ACTION_WAIT,1, ACTION_PLAYER"/>
   <property name="InitialCoords" value="32,112"/>
   <property name="InitialScreen" value="0,1"/>
   <property name="script-0_8" value="ACTION_IDLE,ACTION_MOVE, 4, 26, ACTION_IDLE, ACTION_WAIT, 1, ACTION_STRING,7, ACTION_FX, 7, ACTION_REMOVE_JAR, 124, ACTION_MOVE, 4, 28, ACTION_IDLE, ACTION_WAIT, 1, ACTION_STRING,6, ACTION_FINISH_LEVEL, 1, ACTION_PLAYER"/>
   <property name="script-5_8" value="ACTION_CHECKPOINT, ACTION_PLAYER"/>
-  <property name="string-0" value="EL AGUA SAGRADA RECLAMA SU LUGAR."/>
+  <property name="string-0" value="RAPPORTE L'EAU B?NITE % SA PLACE."/>
   <property name="string-0-en" value="TAKE THE HOLY WATER BACK TO WHERE IT BELONGS."/>
-  <property name="string-1" value="LOS DIOSES AGRADECEN EL AGUA SAGRADA QUE CALMA SU SED, PUEDES PASAR  A SU MORADA."/>
+  <property name="string-1" value="LES DIEUX SONT RECONNAISSANTS POUR L'EAU B?NITE. TU PEUX MAINTENANT ENTRER EN LEUR DEMEURE."/>
   <property name="string-1-en" value="THE GODS ARE THANKFUL FOR THE HOLY WATER. YOU CAN NOW ENTER THEIR DWELLING."/>
-  <property name="string-2" value="AHORA EL FUEGO SAGRADO VA CONTIGO."/>
+  <property name="string-2" value="TU POSS$DES MAINTENANT LE FEU SACR?."/>
   <property name="string-2-en" value="THE HOLY FIRE IS NOW WITH YOU."/>
-  <property name="string-3" value="EL B%CULO HA ABIERTO LAS PUERTAS DEL FUEGO."/>
+  <property name="string-3" value="LA CROSSE A OUVERT LES PORTES DU FEU."/>
   <property name="string-3-en" value="THE CROZIER HAS OPENED THE DOORS OF FIRE."/>
-  <property name="string-4" value="EL B%CULO DE FUEGO QUIERE REGRESAR A SU LUGAR."/>
+  <property name="string-4" value="RAPPORTE LA CROSSE DE FEU % SA PLACE."/>
   <property name="string-4-en" value="TAKE THE FIRE CROZIER BACK TO WHERE IT BELONGS."/>
-  <property name="string-5" value="YA PUEDES PASAR POR LA PUERTA DEL FUEGO."/>
+  <property name="string-5" value="TU PEUX MAINTENANT PASSER LA PORTE DU FEU."/>
   <property name="string-5-en" value="YOU CAN NOW GO TROUGH THE DOOR OF FIRE."/>
-  <property name="string-6" value="DEFINITIVAMENTE DAL GURAK HA RECUPERADO SU FUERZA, Y AHORA INVOCA UNA TERRIBLE Y OSCURA MAGIA PARA INTENTAR RESCATAR A ASHERAT DESDE EL INFIERNO. DEBO DARME PRISA PARA COMPLETAR LA ESPADA, O YA NO HABR% ESPERANZA."/>
+  <property name="string-6" value="DAL GURAK A FINALEMENT RETROUV? SES FORCES, ET IL INVOQUE LA MAGIE LA PLUS SOMBRE POUR ESSAYER DE SAUVER ASHERAT DES ENFERS. JE DOIS ME D?P&gt;CHER DE TERMINER L'?P?E, OU TOUT ESPOIR SERA PERDU."/>
   <property name="string-6-en" value="DAL GURAK HAS FINALLY RECOVERED HIS STRENGTH, AND HE IS CASTING THE DARKEST MAGIC TRYING TO RESCUE ASHERAT FROM HELL. I MUST HURRY UP AND COMPLETE THE SWORD, OR THERE WILL BE NO HOPE."/>
-  <property name="string-7" value="S;LO TIENES QUE CONSEGUIR OTRO FRAGMENTO PARA PODER TENER FINALMENTE EN TUS MANOS LA ESPADA DE IANNA."/>
+  <property name="string-7" value="PLUS QU'UN FRAGMENT % R?CUP?RER, ET TU AURAS L'?P?E DE IANNA ENTRE TES MAINS."/>
   <property name="string-7-en" value="THERE IS ONLY ONE MORE FRAGMENT TO RECOVER, AND YOU WILL HAVE THE SWORD OF IANNA IN YOUR HANDS."/>
-  <property name="string-8" value="ANTA$O UN LUGAR SAGRADO, EN EL QUE LOS VIAJEROS ENCONTRABAN DESCANSO. LARGO TIEMPO ABANDONADOS EN MITAD DEL DESIERTO, ESTOS TEMPLOS A&quot;N MANTIENEN SU ESPLENDOR. REZO PARA QUE LOS ENGENDROS DE DAL GURAK NO HAYAN LLEGADO A PROFANARLOS."/>
+  <property name="string-8" value="CE LIEU ?TAIT AUTREFOIS UN SANCTUAIRE O&quot; LES P$LERINS POUVAIENT SE REPOSER. ABANDONN?S AU MILIEU DU D?SERT, CES TEMPLES ONT CONSERV? UNE PARTIE DE LEUR SPLENDEUR PASS?E. J'ESP$RE QUE LES HORRIBLES CR?ATURES INVOQU?ES PAR DAL GURAK NE LES ONT PAS ENCORE PROFAN?S."/>
   <property name="string-8-en" value="LONG TIME AGO THIS WAS A SACRED PLACE, WHERE PILGRIMS FOUND REST. ABANDONED IN THE MIDDLE OF THE DESERT, THESE TEMPLES STILL MAINTAIN SOME OF THEIR OLD MAGNIFICENCE. I PRAY THAT THE HORRIBLE CREATURES CONJURED UP BY DAL GURAK HAVE NOT POLLUTED THEM."/>
-  <property name="string-9" value="EL HACHA ESCONDIDA AHORA EST% EN TU PODER."/>
+  <property name="string-9" value="LA HACHE SECR$TE EST MAINTENANT EN TA POSSESSION."/>
   <property name="string-9-en" value="THE HIDDEN AXE NOW BELONGS TO YOU."/>
  </properties>
  <tileset firstgid="1" name="STILES" tilewidth="16" tileheight="16" tilecount="256" columns="16">
