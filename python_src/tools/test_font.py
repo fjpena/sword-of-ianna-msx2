@@ -30,7 +30,7 @@ screen = pygame.display.set_mode((256*3, 192*3))
 pygame.display.set_caption('Ianna - Press F12 to set fullscreen')
 screen.fill((0, 0, 0))
 buffer = pygame.Surface((256, 192))
-tiles_image = pygame.image.load('font.png').convert()
+tiles_image = pygame.image.load('font_menu_FR.png').convert()
 
 buffer.blit(tiles_image, (0, 0))
 pygame.transform.scale(buffer, (256*3, 192*3), screen)

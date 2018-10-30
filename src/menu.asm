@@ -950,7 +950,7 @@ string_1: db "  PLAY  ",0
 string_1_es: db " JOUER  ",0
 string_2: db "PASSWORD",0
 string_3: db "ENGLISH ",0
-string_3_es: db "FRAN*AIS",0
+string_3_es: db "FRAN#AIS",0
 string_4_1:  db "MUS./SON",0
 string_4_2:  db "MUSIQUE ",0
 string_4_3:  db "  SON   ",0
