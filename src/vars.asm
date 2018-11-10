@@ -192,7 +192,7 @@ menu_loops: db 0
 credit_timer: db 0
 credit_current: db 0
 current_string_list: dw 0
-string_list: dw string_1, string_2, string_3, string_4_1
+string_list: dw string_1, string_2, string_3, string_4_1_en
 string_list_es: dw string_1, string_2, string_3_es, string_4_1
 menu_in_jukebox: db 0
 menu_delay: db 0

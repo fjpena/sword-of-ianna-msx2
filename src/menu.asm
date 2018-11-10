@@ -270,7 +270,7 @@ showmenu_fire_check3:		; menu_option is 3, Change music info
 	ld de, 6
 	add hl, de
 	push hl
-	ld e, (hl)	
+	ld e, (hl)
 	inc hl
 	ld d, (hl)
 	ld hl, 9
@@ -278,20 +278,33 @@ showmenu_fire_check3:		; menu_option is 3, Change music info
 	ex de, hl
 	pop hl
 	ld (hl), e
-	jr showmenu_fire_music_common	
+	ld hl, string_list_es
+	ld de, 6
+	add hl, de
+	push hl
+	ld e, (hl)
+	inc hl
+	ld d, (hl)
+	ld hl, 9
+	add hl, de
+	ex de, hl
+	pop hl
+	ld (hl), e
+	jr showmenu_fire_music_common
 showmenu_fire_music_fx:
 	xor a
 	ld (music_state), a
 	ld hl, string_list
 	ld de, 6
 	add hl, de
-	ld de, string_4_1
+	ld de, string_4_1_en
 showmenu_fire_music_common:
 	ld (hl), e
 	inc hl
 	ld (hl), d
 	ld bc, 7
 	add hl, bc
+	ld de, string_4_1
 	ld (hl), e
 	inc hl
 	ld (hl), d
@@ -951,9 +964,12 @@ string_1_es: db " JOUER  ",0
 string_2: db "PASSWORD",0
 string_3: db "ENGLISH ",0
 string_3_es: db "FRAN#AIS",0
-string_4_1:  db "MUS./SON",0
+string_4_1:  db   "MUS./SON",0
 string_4_2:  db "MUSIQUE ",0
 string_4_3:  db "  SON   ",0
+string_4_1_en: DB "MUSIC/FX",0
+string_4_2_en: DB " MUSIC  ",0
+string_4_3_en: DB "   FX   ",0
 weapon_masks: db $80, $40, $20, $10
 secret_pass: db '0CAFECAFE0'
 wave_delta: db 2, 2, 1, 1, -1, -1, -2, -2, -2, -2, -1, -1, 1, 1, 2, 2

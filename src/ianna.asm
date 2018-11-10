@@ -99,8 +99,9 @@ main:
 	ld hl, string_3_es
 	ld (string_list_es+4), hl
 	ld hl, string_4_1
-	ld (string_list+6), hl
 	ld (string_list_es+6), hl
+	ld hl, string_4_1_en
+	ld (string_list+6), hl
 game_loop:
 	call cls
 	call mainmenu
